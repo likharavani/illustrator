@@ -70,3 +70,19 @@
     opacity: 1;
    
 }
+.box:hover{
+    transform: translateY(-10px);
+
+}
+.box{
+    transition: all 0.3s ease;
+}
+.j i{
+    color:rgb(0, 35, 110);
+    background-color: rgb(224, 224, 224)!important;
+}
+.j i:hover{
+    background-color: rgb(5, 55, 146)!important;
+    color: white !important;
+    transform:scale(0.9)!important;
+}
