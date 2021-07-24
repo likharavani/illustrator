@@ -1,3 +1,10 @@
+:root{
+    --blue:#425aa5 !important;
+}
+.navbar-fixed{
+    position: fixed;
+    z-index: 100;
+}
 .col-6 > img:hover{
     cursor: pointer;
     filter: grayscale(0%) !important;;
@@ -6,6 +13,9 @@
 .col-12 >.px-3{
     box-shadow: 0px 3px 10px rgba(0 0 0 /0.2);
     transition: all 0.3s ease;
+}
+.col-12 > .px-3:hover  h3{
+    color:var(--blue);
 }
 .col-12 >.px-3:hover{
     transform: translateY(-10px)!important;
@@ -45,7 +55,7 @@
    opacity: 0; 
    transition: all 0.3s ease;
     color:white;
-   background-color: rgb(0, 39, 97);
+   background-color:var(--blue);
    
 }
 .content-item{
@@ -78,11 +88,49 @@
     transition: all 0.3s ease;
 }
 .j i{
-    color:rgb(0, 35, 110);
+    color:var(--blue);
     background-color: rgb(224, 224, 224)!important;
 }
 .j i:hover{
-    background-color: rgb(5, 55, 146)!important;
+    background-color:var(--blue)!important;
     color: white !important;
     transform:scale(0.9)!important;
+}
+.box{
+    margin:0.3rem;
+}
+@media only screen and (max-width:600px)
+{
+    .box{
+        flex-direction: column!important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .i img{
+        width: 10rem !important;;
+    }
+    .container{
+        padding: 0rem  !important;
+    }
+} 
+
+
+@media only screen and (max-width:460px)
+{
+    .box{
+        width: 100% !important;
+    }
+    .i img{
+        width: 6rem !important;;
+    }
+    .box{
+        padding: 0.2rem!important;
+    }
+    .j{
+        padding: 0rem!important;
+    }
+    .j i{
+        margin:0rem !important;
+    }
 }
